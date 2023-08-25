@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Weather site{% endblock %}</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="top-bar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                {% if logged_in %}
+                
+                    <li><a href="/logout">Logout</a></li>
+                {% else %}
+                    <li><a href="/login">Login</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Content Area -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Weather Site</p>
+    </footer>
+
+    <!-- ... script imports ... -->
+</body>
+</html>

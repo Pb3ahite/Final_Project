@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='information2.css') }}">
+</head>
+<body>
+    {% include 'nav.html' %} 
+
+    <div class="information-container">
+        <img class="information2-image" src="{{ url_for('static', filename='green.jpg') }}" alt="Information2 Image">
+    </div>
+
+    <div class="bullet-points-container">
+        <h5>Some disagree.
+            <h5>
+        <ul class="bullet-points">
+            <li><strong>Natural Climate Variability:</strong></li>
+            <p> Skeptics sometimes argue that the Earth's climate has undergone natural fluctuations throughout history, and the current changes are within the range of past variations.</p>
+            <li><strong>Data Uncertainty:</strong></li>
+            <p> Critics may point to uncertainties in climate data, suggesting that the climate models used to project future changes are not accurate enough to make reliable predictions.</p>
+            <li><strong>Solar Activity:</strong></li>
+            <p> Some skeptics propose that changes in solar radiation and solar activity could be driving the observed temperature changes, attributing global warming to natural solar cycles.</p>
+
+
+            
+        </ul>
+
+        <p class="end-text">
+            <strong>It's important to note that while these arguments exist, they are often countered and refuted by scientific research and consensus. The overwhelming body of evidence supports the conclusion that human activities are the primary driver of the recent rapid changes in the Earth's climate.</strong>
+        </p>
+    </div>
+</body>
+</html>

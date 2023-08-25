@@ -1,0 +1,9 @@
+.nav a {
+    color: #f0f0f0; 
+    text-decoration: none;
+}
+
+
+.nav a:hover {
+    color: #ccc; 
+}

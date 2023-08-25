@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='information.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+
+</head>
+<body>
+    {% include 'nav.html' %} 
+
+    <div class="information-container">
+        <h5>Is there cause for concern?</h5>
+        <img class="information-image" src="{{ url_for('static', filename='reflection.jpg') }}" alt="Information Image">
+        <p class="information-text">
+            Mankind faces a crisis of its own making. Most scientists agree that human activity is responsible for global warming. This rise in temperature has already changed the climate and brought disastrous consequences. These include the following:
+
+            More frequent and intense weather events, such as heat waves, droughts, and storms, which in turn cause more floods and wildfires.
+           
+            Melting glaciers and Arctic ice.
+           
+            Rising sea levels.
+           
+            The climate crisis has affected every corner of the earth. After documenting conditions in 193 countries, a New York Times report stated: “The planet is sending an SOS.” Because of the death and suffering climate change has caused, the World Health Organization has called it the “single biggest health threat facing humanity.”
+                              
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+
+<ul class="bullet-points">
+    <li><strong><a href="https://www.ipcc.ch/">Intergovernmental Panel on Climate Change (IPCC)</a>:</strong> The IPCC is a leading international body for assessing the science related to climate change. It provides comprehensive reports on the state of the climate and the impact of human activities.</li>
+    <li><strong><a href="https://climate.nasa.gov/">NASA Climate Change</a>:</strong> NASA's website offers a wealth of information on climate change science, data, and research. It includes resources for understanding the causes and consequences of global warming.</li>
+  
+</ul>
+
+<p>It's important to stay informed and consider a wide range of expert opinions and scientific research when discussing climate change.</p>
+
+    </div>
+</body>
+</html>

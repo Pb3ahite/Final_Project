@@ -1,0 +1,58 @@
+
+
+
+.nav-links a {
+    color: black; 
+    margin: 10px; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 50, 219);
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 100vh; 
+    background-color: rgb(50, 50, 219); 
+}
+
+.image-container img {
+    max-width: 60%;
+    max-height: 90%;
+}
+
+.content-container {
+    display: flex;
+}
+
+
+.post-section {
+    flex: 1;
+    padding: 20px; 
+    background-color: lavender;
+
+}
+
+.post-form {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 30px; /* Add margin to move the form down */
+}
+
+.post-button {
+    margin-top: 10px;
+}
+
+.post-replies {
+    flex: 1;
+    margin-top: 30px; /* Add margin to move the replies down */
+}
+

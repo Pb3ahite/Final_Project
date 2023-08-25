@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='information.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='information3.css') }}"> 
+</head>
+<body>
+    {% include 'nav.html' %} 
+
+    <div class="top-container">
+        <div class="top-text">
+            <p>During the COVID-19 lockdown, air pollution from factories and automobiles was drastically reduced in New Delhi, India. Levels of fine particulate matter (PM2.5) quickly fell. These tiny particles (.0025 mm or smaller) can cause respiratory illness and other serious ailments. This improvement was only temporary, but it demonstrated the ability of the atmosphere to recover quickly from harmful levels of pollution.</p>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="left-images">
+            <div class="left-image-caption">
+                <img class="left-image" src="{{ url_for('static', filename='before.jpg') }}" alt="Before Image">
+                <p class="caption">Before Covid(2019)</p>
+            </div>
+            <div class="left-image-caption">
+                <img class="left-image" src="{{ url_for('static', filename='during.jpg') }}" alt="During Image">
+                <p class="caption">During Covid</p>
+            </div>
+            <p class="image-text">The ability of forests to absorb carbon dioxide from the air is well-known. But less well-known is the fact that coastal wetlands thriving with mangroves can do an even better job. Mangroves play a significant role in removing from our air as much as five times more carbon dioxide than tropical forests can.
+            <p>Recent studies show that some large algae such as kelp not only capture carbon dioxide from the atmosphere but also bury it. Leaflike kelp blades have gas-filled bladders that allow them to float great distances. Far away from shore, the bladders burst, and the carbon-laden kelp sinks to the ocean floor. There it evidently stays safely buried for many centuries.</p>
+            <div class="left-image-caption">
+                <img class="left-image butterfly-image" src="{{ url_for('static', filename='butterfly.jpg') }}" alt="Possibilities">
+                <p class="caption">Possibilities</p>
+            </div>
+            <p><strong> Whether you believe in global warming or not, it's clear that we have issues with our planets eco-system.  However, the evidence shows that the planet can heal itself if we let it.</strong></p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+</head>
+<body>
+    {% include 'nav.html' %}
+
+    <header>
+        <h1>Weather Site</h1>
+    </header>
+    
+    <main>
+        <input type="text" id="locationInput" placeholder="Enter city name, zip code">
+        
+       
+        <button id="getWeatherButton">Get Weather</button>
+        <div id="weatherInfo">
+            {{ weather_info|safe }}
+
+           
+            <div id="weatherDataContainer"></div>
+        </div>
+    </main>
+    <div class="content">
+        <h2 class="centered">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs global warming just a myth?</h2>
+        <div class="media-container">
+            <video src="{{ url_for('static', filename='Earth.mp4') }}" autoplay loop muted></video>
+          <img src="{{ url_for('static', filename='Earth_scorched.jpg') }}" alt="Image">
+        </div>
+    </div>
+    <footer>
+   
+     <div class="centered-text">
+    <p>“The climate disaster is here. Earth is already becoming unlivable.”—The Guardian.</p>
+</div>
+<img src="{{ url_for('static', filename='Hurricane.jpg') }}" alt="Hurricane" class="half-sized centered-image">
+
+        <p>&copy; 2023 Weather Site</p>
+    </footer>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>

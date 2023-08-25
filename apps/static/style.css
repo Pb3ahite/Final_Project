@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2c1e16, #ffffff);
+    
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.media-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px; 
+}
+
+.media-container video,
+.media-container img {
+    max-width: 40%;
+    height: auto;
+}
+.centered-text {
+    text-align: center;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.half-sized {
+    width: 50%;
+}

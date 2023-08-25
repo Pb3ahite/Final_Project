@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='post.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='post_feed.css') }}">
+</head>
+<body>
+    {% include 'nav.html' %}  
+
+    <div class="dialog-box" id="postDialog">
+        <p>Your post has been submitted successfully!</p>
+    </div>
+   
+    <div class="post-list">
+        <h2>Create a New Post</h2>
+        <form method="POST" action="/post_feed">
+            {{ form.hidden_tag() }}
+            {{ form.content.label }}
+            {{ form.content(size=40) }}
+            {{ form.submit }}
+        </form>
+        {% for post in posts %}
+        <div class="post">
+            <p><strong>Posted by: {{ post.author.username }}</strong></p>
+            <p>{{ post.content }}</p>
+            <div class="comments">
+                {% for comment in post.comments %}  {# Notice the change here #}
+                    <p><strong>{{ comment.user.username }}</strong>: {{ comment.content }}</p>
+                {% endfor %}
+            </div>
+            
+            <button class="open-comment-modal">Comment</button>
+        
+            <div class="comment-modal">
+                <form class="comment-form" action="/comment/{{ post.id }}" method="POST">
+                    <textarea name="comment_content" rows="3" cols="40"></textarea>
+                    <button type="submit">Submit Comment</button>
+                </form>
+                <form action="/delete_post/{{ post.id }}" method="POST">
+                    <button type="submit" class="delete-button">Delete Post</button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

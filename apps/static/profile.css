@@ -1,0 +1,70 @@
+
+.top-bar {
+    background: linear-gradient(to bottom, #8a2be2, #1c1c1f);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content {
+    margin-top: 70px;
+}
+
+.profile-container {
+    background: linear-gradient(to bottom, #8a2be2, #e6e6fa);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+.profile-container h2 {
+    margin-bottom: 15px;
+}
+
+.profile-container p {
+    margin: 10px 0;
+}
+
+.profile-container a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #8a2be2;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(65, 65, 94);
+}
+
+.profile-container {
+    background: linear-gradient(to bottom, #8a2be2, #e6e6fa);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+}
+
+/* Rest of your existing styles */

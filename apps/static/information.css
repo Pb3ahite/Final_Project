@@ -1,0 +1,48 @@
+
+
+
+body {
+    background-color: rgb(108, 152, 247);
+}
+
+
+.information-container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(51, 75, 146);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 550px;
+}
+
+
+.information-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.information-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #070303;
+}
+
+
+nav a {
+    color: #c3d1f7;
+    text-decoration: none;
+    padding: 10px; 
+}
+
+
+nav a:hover {
+    color: #060f1b;
+}
+
+
+
+

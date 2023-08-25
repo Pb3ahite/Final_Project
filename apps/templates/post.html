@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/post.css">
+</head>
+<body>
+    {% include 'nav.html' %}
+
+    <section id="survey-section">
+        <h2>Give us your thoughts:</h2>
+    </section>
+
+    <section id="post-feed-section">
+        <h5>Why do you feel that way?</h5>
+    </section>
+    
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='flowers.jpg') }}" alt="Image">
+      
+        <!-- <button class="open-comment-modal">Comment</button> -->
+        
+        <div id="postDialog" class="post-dialog">
+            <form class="post-form" action="/post" method="POST">
+                {{ form.hidden_tag() }}
+                {{ form.content }}
+                <button type="submit">Submit Post</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
