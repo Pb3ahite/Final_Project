@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(190, 190, 223); /* Set the background color */
+}
+.top-bar {
+    background: linear-gradient(to right, rgb(71, 20, 71), rgb(180, 180, 231)),
+                url(path/to/palm-image.jpg) center top / auto 100%; /* Adjust the background size */
+    padding: 150px 0 70px; /* Adjust padding to cover just past the "Edit Profile" text */
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Rest of your existing styles */
+
+.top-bar a {
+    margin: 0 10px;
+    color: rgb(24, 13, 13); 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-bar a:hover {
+    color: rgb(56, 50, 50);
+}
+
+.top-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-bar ul li {
+    line-height: 35px; 
+}
+
+.top-bar ul li a {
+    font-size: 32px; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    width: 100%;
+}
+
+.edit-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.edit-profile-container h2 {
+    margin-bottom: 20px; 
+}
+
+.edit-profile-container label,
+.edit-profile-container input {
+    display: block;
+    margin: 10px auto; 
+    width: 90%; 
+}
